@@ -1,0 +1,32 @@
+<!--
+@license
+Copyright (c) 2017 Peter Nagy - Digital Dreams Online Global Ltd. All rights reserved.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./shared-styles.html">
+<link rel="import" href="./elements/di-vevotipus-editor.html">
+
+<dom-module id="di-view2">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">K</div>
+      <h1>Komponensteszt</h1>
+      <di-vevotipus-editor></di-vevotipus-editor>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'di-view2',
+    });
+  </script>
+</dom-module>

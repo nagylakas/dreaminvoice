@@ -1,0 +1,30 @@
+<!--
+@license
+Copyright (c) 2017 Peter Nagy - Digital Dreams Online Global Ltd. All rights reserved.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./shared-styles.html">
+
+<dom-module id="di-view404">
+  <template>
+    <style>
+      :host {
+        display: block;
+        padding: 10px 20px;
+      }
+    </style>
+
+    <!--
+      If deploying in a folder replace href="/" with the full path to your site.
+      Such as: href=="http://polymerelements.github.io/polymer-starter-kit"
+    -->
+    Belső programhiba történt. <a href="#/login">Újraindítás.</a>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'di-view404',
+    });
+  </script>
+</dom-module>

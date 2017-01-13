@@ -1,0 +1,44 @@
+<!--
+@license
+Copyright (c) 2017 Peter Nagy - Digital Dreams Online Global Ltd. All rights reserved.
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../shared-styles.html">
+
+<dom-module id="di-vevotipus-editor">
+  <template>
+    <style include="iron-flex iron-flex-alignment">
+    <style>
+      .container {
+        @apply(--layout-horizontal);
+      }
+    </style>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <h1>Vevőtípus</h1>
+      <div class="container">
+        <paper-input char-counter required label="Vevő neve"></paper-input>
+        <paper-input char-counter prevent-invalid-input allowed-pattern="[-\d]" auto-validate pattern="[0-9]{8}[-][1-5]{1}[-][0-5]{1}[0-9]{1}" minlength="13" maxlength="13" label="Vevő adószáma"></paper-input>
+        <paper-input style="text-transform: uppercase;" char-counter prevent-invalid-input allowed-pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+*\d]" auto-validate minlength="4" maxlength="21" label="Közösségi adószám"></paper-input>
+        <paper-input char-counter prevent-invalid-input allowed-pattern="[-\d]" auto-validate pattern="[0-9]{8}[-][1-5]{1}[-][0-5]{1}[0-9]{1}" label="Csoport Azonosító Szám"></paper-input>
+        Címe...
+      </div>
+      <p class="right small">Copyright &copy; 2017 - Digital Dreams Online Global Kft.</p>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'di-vevotipus-editor',
+    });
+  </script>
+</dom-module>
